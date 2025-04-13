@@ -1,0 +1,9 @@
+------------------
+Version: 1.1.14
+Date: 2021.02.07
+  Changes: - Recipe fixed
+           - Speed values rounded
+
+------------------
+z_yira_up_0.7.11
+	first version for factorio 0.17.0
