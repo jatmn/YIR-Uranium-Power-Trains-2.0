@@ -1,11 +1,13 @@
+require("lib.functions")
+
 data:extend(
 	{
 		--
 		{
 			type = "recipe",
-			name = "yir_atom_header_recipe",
+			name = "yir_atom_header",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 5.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_loco_future", amount = 1.0},
@@ -17,6 +19,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_atom_header", amount = 1}
 			},
+			main_product = "yir_atom_header",
 			order = "lsw1",
 			group = "railway_addons",
 			subgroup = "yir_uranium_power_loco"
@@ -63,8 +66,9 @@ data:extend(
 				{type = "physical", decrease = 15, percent = 30},
 				{type = "impact", decrease = 50, percent = 60}
 			},
-			burner = {
-				fuel_category = "nuclear",
+			energy_source = {
+				type = "burner",
+				fuel_categories = {"nuclear"},
 				effectivity = 5,
 				fuel_inventory_size = 1,
 				smoke = {
@@ -115,6 +119,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -127,14 +132,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -176,7 +182,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {
@@ -192,9 +198,9 @@ data:extend(
 		},
 		{
 			type = "recipe",
-			name = "yir_atom_mitte_recipe",
+			name = "yir_atom_mitte",
 			category = "yir_rc_wsl", -- Workshop for Locomotives
-			enabled = "true",
+			enabled = true,
 			energy_required = 5.00,
 			ingredients = {
 				{type = "item", name = "yir_frame_loco_future", amount = 1.0},
@@ -206,6 +212,7 @@ data:extend(
 			results = {
 				{type = "item", name = "yir_atom_mitte", amount = 1}
 			},
+			main_product = "yir_atom_mitte",
 			order = "lsw1",
 			group = "railway_addons",
 			subgroup = "yir_uranium_power_loco"
@@ -252,8 +259,9 @@ data:extend(
 				{type = "physical", decrease = 15, percent = 30},
 				{type = "impact", decrease = 50, percent = 60}
 			},
-			burner = {
-				fuel_category = "nuclear",
+			energy_source = {
+				type = "burner",
+				fuel_categories = {"nuclear"},
 				effectivity = 5,
 				fuel_inventory_size = 2,
 				smoke = {
@@ -304,6 +312,7 @@ data:extend(
 			--back_light = rolling_stock_back_light(),
 			--stand_by_light = rolling_stock_stand_by_light(),
 			pictures = {
+				rotated = {
 				priority = "very-low",
 				width = 256,
 				height = 256,
@@ -316,14 +325,15 @@ data:extend(
 				lines_per_file = 8,
 				shift = {0.42, -1.125}
 			},
+			},
 			minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
 			},
 			selected_minimap_representation = {
-				filename = "__base__/graphics/entity/diesel-locomotive/diesel-locomotive-selected-minimap-representation.png",
+				filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
 				flags = {"icon"},
 				size = {20, 40},
 				scale = 0.5
@@ -365,7 +375,7 @@ data:extend(
 					}
 				}
 			},
-			drive_over_tie_trigger = drive_over_tie(),
+			drive_over_tie_trigger = yir_drive_over_tie(),
 			tie_distance = 50,
 			vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound = {

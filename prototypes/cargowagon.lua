@@ -1,12 +1,13 @@
+require("lib.functions")
 
 data:extend(
 {
 
 	{
 		type = "recipe",
-		name = "yir_cw_flourit_recipe",
+		name = "yir_cw_flourit",
 		category = "yir_rc_wsw", -- Workshop for Waggons
-		enabled = "true",
+		enabled = true,
 		energy_required = 3.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_waggon" , amount = 1.0, },			
@@ -16,9 +17,10 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_cw_flourit", amount = 1, },
-		},		
+		},	
+		main_product = "yir_cw_flourit",
 		order = "cw1", group = "railway_addons", subgroup = "yir_uranium_power_cargo2a",
-	},	
+	},
 
 	{
 		type="item-with-entity-data", name="yir_cw_flourit", icon="__z_yira_UP__/graphics/cws64_fluorite_icon.png", 
@@ -59,6 +61,7 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256,
 			height = 256,
@@ -68,15 +71,16 @@ data:extend(
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
+			},
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -84,7 +88,7 @@ data:extend(
 
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{
@@ -104,9 +108,9 @@ data:extend(
 
 	{
 		type = "recipe",
-		name = "yir_cw_uranite_recipe",
+		name = "yir_cw_uranite",
 		category = "yir_rc_wsw", -- Workshop for waggons
-		enabled = "true",
+		enabled = true,
 		energy_required = 3.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_waggon" , amount = 1.0, },			
@@ -116,7 +120,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_cw_uranite", amount = 1, },
-		},		
+		},
+		main_product = "yir_cw_uranite",
 		order = "cw2", group = "railway_addons", subgroup = "yir_uranium_power_cargo2a",
 	},	
 
@@ -159,6 +164,7 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256,
 			height = 256,
@@ -168,15 +174,16 @@ data:extend(
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
+			},
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -184,7 +191,7 @@ data:extend(
 
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{
@@ -204,9 +211,9 @@ data:extend(
 	
 	{
 		type = "recipe",
-		name = "yir_cw_upempty_recipe",
+		name = "yir_cw_upempty",
 		category = "yir_rc_wsw", -- Workshop for waggons
-		enabled = "true",
+		enabled = true,
 		energy_required = 3.00,
 		ingredients = {			
 			{ type = "item", name = "yir_frame_waggon" , amount = 1.0, },			
@@ -216,7 +223,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_cw_upempty", amount = 1, },
-		},		
+		},
+		main_product = "yir_cw_upempty",
 		order = "cw3", group = "railway_addons", subgroup = "yir_uranium_power_cargo2a",
 	},	
 
@@ -259,6 +267,7 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256,
 			height = 256,
@@ -268,15 +277,16 @@ data:extend(
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
+			},
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -284,7 +294,7 @@ data:extend(
 
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{
@@ -304,11 +314,11 @@ data:extend(
 
 	{
 		type = "recipe",
-		name = "yir_cw_upclosed_recipe",
+		name = "yir_cw_upclosed",
 		category = "yir_rc_wsw", -- Workshop for Locomotives
-		enabled = "true",
+		enabled = true,
 		energy_required = 3.00,
-		ingredients = {			
+		ingredients = {
 			{ type = "item", name = "yir_frame_waggon" , amount = 1.0, },			
 			{ type = "item", name = "yir_radsatz_waggon" , amount = 1.0, },			
 			{ type = "item", name = "yir_color_green" , amount = 1.0, },			
@@ -316,7 +326,8 @@ data:extend(
 		},
 		results = {
 			{ type = "item", name = "yir_cw_upclosed", amount = 1, },
-		},		
+		},
+		main_product = "yir_cw_upclosed",
 		order = "cw4", group = "railway_addons", subgroup = "yir_uranium_power_cargo2a",
 	},	
 
@@ -359,6 +370,7 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
+			rotated = {
 			priority = "very-low",
 			width = 256,
 			height = 256,
@@ -368,15 +380,16 @@ data:extend(
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
+			},
 		},
 		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
 		},
 		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
 			flags = {"icon"},
 			size = {20, 40},
 			scale = 0.5
@@ -384,7 +397,7 @@ data:extend(
 
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-		drive_over_tie_trigger = drive_over_tie(),
+		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
 		{
@@ -400,9 +413,5 @@ data:extend(
 		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
-
-	
-	
-	
+	},
 })

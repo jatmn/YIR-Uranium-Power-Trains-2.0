@@ -11,7 +11,7 @@
 	"dependencies": [
 		"base >= 2.0.43",
 		"yi_railway >= 1.2.1",
-		"? Yuoki >= 1.2.13",
+		"? Yuoki >= 1.2.13"
 	],
 	"description": "adds Cargo-Waggons and Locomotives Uranium-Power-Mod Themed"
 }
