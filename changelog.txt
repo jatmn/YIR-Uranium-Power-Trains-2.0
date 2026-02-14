@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
-Date: 29.11.2025
+Date: 2026.02.13
   Major Features:
+    - Major overhaul update changes thanks to TheKingJo!
     - TheKingJo: upscaled sprites, separated shadow from base sprite
     - TheKingJo: added item sounds, modernized vehicle sounds
     - TheKingJo: added a simple tech tree to unlock the stuff by crafting certain things

@@ -7,7 +7,7 @@ data:extend({
 		order = "c-uran",
 		stack_size = 5,
 		icon_size = 64,
-		place_result = "yir_atom_header"
+		place_result = "yir_atom_header",
 	},
 	{
 		type = "item",
@@ -17,9 +17,8 @@ data:extend({
 		order = "c-uran",
 		stack_size = 5,
 		icon_size = 64,
-		place_result = "yir_atom_mitte"
+		place_result = "yir_atom_mitte",
 	},
-
 
 	{
 		type = "item-with-entity-data",
@@ -61,7 +60,6 @@ data:extend({
 		icon_size = 64,
 		place_result = "yir_cw_upclosed",
 	},
-
 
 	{
 		type = "item-with-entity-data",

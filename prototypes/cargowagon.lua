@@ -9,8 +9,8 @@ data:extend({
 		icon_size = 64,
 		inventory_size = 20,
 		max_health = 400,
-		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
-		selection_box = {{-1, -2}, {1, 2}},
+		collision_box = { { -0.6, -1.5 }, { 0.6, 1.5 } },
+		selection_box = { { -1, -2 }, { 1, 2 } },
 		weight = 500,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -23,10 +23,9 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
 		working_sound = {
-			sound =
-			{
+			sound = {
 				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
+				volume = 0.5,
 			},
 			match_volume_to_activity = true,
 		},
@@ -39,8 +38,8 @@ data:extend({
 		icon_size = 64,
 		inventory_size = 20,
 		max_health = 400,
-		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
-		selection_box = {{-1, -2}, {1, 2}},
+		collision_box = { { -0.6, -1.5 }, { 0.6, 1.5 } },
+		selection_box = { { -1, -2 }, { 1, 2 } },
 		weight = 500,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -53,10 +52,9 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
 		working_sound = {
-			sound =
-			{
+			sound = {
 				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
+				volume = 0.5,
 			},
 			match_volume_to_activity = true,
 		},
@@ -69,8 +67,8 @@ data:extend({
 		icon_size = 64,
 		inventory_size = 20,
 		max_health = 400,
-		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
-		selection_box = {{-1, -2}, {1, 2}},
+		collision_box = { { -0.6, -1.5 }, { 0.6, 1.5 } },
+		selection_box = { { -1, -2 }, { 1, 2 } },
 		weight = 500,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -83,10 +81,9 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
 		working_sound = {
-			sound =
-			{
+			sound = {
 				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
+				volume = 0.5,
 			},
 			match_volume_to_activity = true,
 		},
@@ -99,8 +96,8 @@ data:extend({
 		icon_size = 64,
 		inventory_size = 20,
 		max_health = 400,
-		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
-		selection_box = {{-1, -2}, {1, 2}},
+		collision_box = { { -0.6, -1.5 }, { 0.6, 1.5 } },
+		selection_box = { { -1, -2 }, { 1, 2 } },
 		weight = 500,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -113,10 +110,9 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
 		working_sound = {
-			sound =
-			{
+			sound = {
 				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
+				volume = 0.5,
 			},
 			match_volume_to_activity = true,
 		},

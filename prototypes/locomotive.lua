@@ -6,12 +6,12 @@ data:extend({
 		name = "yir_atom_header",
 		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
 		icon_size = 64,
-		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
+		mined_sound = { filename = "__core__/sound/deconstruct-metal-large.ogg" },
 		max_health = 2000,
 		corpse = "big-remnants",
 		dying_explosion = "massive-explosion",
-		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
-		selection_box = {{-1, -3}, {1, 3}},
+		collision_box = { { -0.6, -2.6 }, { 0.6, 2.6 } },
+		selection_box = { { -1, -3 }, { 1, 3 } },
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 3000,
@@ -24,12 +24,12 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 8,
 		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact", decrease = 50, percent = 60}
+			{ type = "physical", decrease = 15, percent = 30 },
+			{ type = "impact", decrease = 50, percent = 60 },
 		},
 		energy_source = {
 			type = "burner",
-			fuel_categories = {"nuclear"},
+			fuel_categories = { "nuclear" },
 			effectivity = 5,
 			fuel_inventory_size = 1,
 		},
@@ -42,11 +42,11 @@ data:extend({
 					priority = "medium",
 					scale = 2,
 					width = 200,
-					height = 200
+					height = 200,
 				},
-				shift = {-0.6, -18},
+				shift = { -0.6, -18 },
 				size = 3,
-				intensity = 1
+				intensity = 1,
 			},
 			{
 				type = "oriented",
@@ -56,12 +56,12 @@ data:extend({
 					priority = "medium",
 					scale = 2,
 					width = 200,
-					height = 200
+					height = 200,
 				},
-				shift = {0.6, -18},
+				shift = { 0.6, -18 },
 				size = 3,
-				intensity = 1
-			}
+				intensity = 1,
+			},
 		},
 	},
 	{
@@ -69,12 +69,12 @@ data:extend({
 		name = "yir_atom_mitte",
 		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
 		icon_size = 64,
-		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
+		mined_sound = { filename = "__core__/sound/deconstruct-metal-large.ogg" },
 		max_health = 2000,
 		corpse = "big-remnants",
 		dying_explosion = "massive-explosion",
-		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
-		selection_box = {{-1, -3}, {1, 3}},
+		collision_box = { { -0.6, -2.6 }, { 0.6, 2.6 } },
+		selection_box = { { -1, -3 }, { 1, 3 } },
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 3000,
@@ -87,12 +87,12 @@ data:extend({
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact", decrease = 50, percent = 60}
+			{ type = "physical", decrease = 15, percent = 30 },
+			{ type = "impact", decrease = 50, percent = 60 },
 		},
 		energy_source = {
 			type = "burner",
-			fuel_categories = {"nuclear"},
+			fuel_categories = { "nuclear" },
 			effectivity = 5,
 			fuel_inventory_size = 2,
 		},
@@ -105,11 +105,11 @@ data:extend({
 					priority = "medium",
 					scale = 2,
 					width = 200,
-					height = 200
+					height = 200,
 				},
-				shift = {-0.6, -18},
+				shift = { -0.6, -18 },
 				size = 2,
-				intensity = 0.8
+				intensity = 0.8,
 			},
 			{
 				type = "oriented",
@@ -119,12 +119,12 @@ data:extend({
 					priority = "medium",
 					scale = 2,
 					width = 200,
-					height = 200
+					height = 200,
 				},
-				shift = {0.6, -18},
+				shift = { 0.6, -18 },
 				size = 2,
-				intensity = 0.8
-			}
+				intensity = 0.8,
+			},
 		},
-	}
+	},
 })
