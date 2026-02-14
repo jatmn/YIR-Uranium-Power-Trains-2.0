@@ -1,0 +1,131 @@
+data:extend({
+	{
+		type = "item",
+		name = "yir_atom_header",
+		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
+		subgroup = "yir_loco_future",
+		order = "c-uran",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_atom_header"
+	},
+	{
+		type = "item",
+		name = "yir_atom_mitte",
+		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
+		subgroup = "yir_loco_future",
+		order = "c-uran",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_atom_mitte"
+	},
+
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_flourit",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw1",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_flourit",
+	},
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_uranite",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw2",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_uranite",
+	},
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_upempty",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw3",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_upempty",
+	},
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_upclosed",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw4",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_upclosed",
+	},
+
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_flourit_4a",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon_4aw.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw5",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_flourit_4a",
+	},
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_uran_4a",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon_4aw.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw6",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_uran_4a",
+	},
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_empty_4a",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty_4aw.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw7",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_empty_4a",
+	},
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_trans_4a",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon_4aw.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw8",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_trans_4a",
+	},
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_4a_urana",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_urana_icon.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw9a",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_4a_urana",
+	},
+
+	{
+		type = "item-with-entity-data",
+		name = "yir_cw_4a_cellsu",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_ucells_icon.png",
+		subgroup = "yir_cargo_uranium",
+		order = "cw9b",
+		stack_size = 5,
+		icon_size = 64,
+		place_result = "yir_cw_4a_cellsu",
+	},
+})
