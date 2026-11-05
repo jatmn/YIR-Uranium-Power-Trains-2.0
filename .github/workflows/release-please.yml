@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       retry_tag:
-        description: 'Resume an unpublished draft after a failed upload/build (for example v1.3.0)'
+        description: 'Resume an unpublished draft after a failed upload/build (for example v1.4.0)'
         required: false
         type: string
 

@@ -20,8 +20,8 @@ def prepare(tag, output):
     if not (info['version'] == manifest.get('.') ==
             release_source('.github/version.txt').read_text().strip() == version):
         raise ValueError('Tag, info.json, Release Please manifest and version file must agree')
-    if info['factorio_version'] != '2.0':
-        raise ValueError('This release workflow targets Factorio 2.0')
+    if info['factorio_version'] != '2.1':
+        raise ValueError('This release workflow targets Factorio 2.1')
 
     changelog = release_source('changelog.txt').read_text()
     sections = re.split(r'^-{99}\n', changelog, flags=re.MULTILINE)
