@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_atom_header",
-		category = "yir_rc_wsl",
+		categories = { "yir_rc_wsl" },
 		enabled = false,
 		energy_required = 40,
 		ingredients = {
@@ -18,7 +18,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_atom_mitte",
-		category = "yir_rc_wsl",
+		categories = { "yir_rc_wsl" },
 		enabled = false,
 		energy_required = 40,
 		ingredients = {
@@ -35,7 +35,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_flourit",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
@@ -52,7 +52,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_uranite",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
@@ -68,7 +68,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_upempty",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
@@ -83,7 +83,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_upclosed",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
@@ -100,7 +100,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_flourit_4a",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
@@ -117,7 +117,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_uran_4a",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
@@ -133,7 +133,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_empty_4a",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
@@ -148,7 +148,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_trans_4a",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
@@ -164,7 +164,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_4a_urana",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
@@ -180,7 +180,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "yir_cw_4a_cellsu",
-		category = "yir_rc_wsw",
+		categories = { "yir_rc_wsw" },
 		enabled = false,
 		energy_required = 10,
 		ingredients = {

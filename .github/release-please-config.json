@@ -6,7 +6,7 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "initial-version": "1.3.0",
+      "initial-version": "1.4.0",
       "include-component-in-tag": false,
       "skip-changelog": true,
       "version-file": ".github/version.txt",

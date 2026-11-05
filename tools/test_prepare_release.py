@@ -20,7 +20,7 @@ class ReleaseTests(unittest.TestCase):
         PackageSourceTests.setUp(self)
         shutil.copy(Path(__file__).with_name('prepare_release.py'), self.root / 'tools')
         info = json.loads((self.root / 'info.json').read_text())
-        info.update(version='1.3.1', factorio_version='2.0', dependencies=['base >= 2.0.43', 'yi_railway >= 1.3.0', '? Yuoki >= 1.2.13', '(?) z_yira_yuokirails >= 1.3.0', '(?) z_yira_american >= 1.3.0'])
+        info.update(version='1.3.1', factorio_version='2.1', dependencies=['base >= 2.1.0', 'yi_railway >= 1.4.0', '? Yuoki >= 1.3.2', '(?) z_yira_yuokirails >= 1.3.0', '(?) z_yira_american >= 1.3.0'])
         (self.root / 'info.json').write_text(json.dumps(info))
         (self.root / '.github').mkdir()
         (self.root / '.github/.release-please-manifest.json').write_text('{".": "1.3.1"}\n')
@@ -137,7 +137,7 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(set(config['packages']), {'.'})
         package = config['packages']['.']
         self.assertEqual(package['release-type'], 'simple')
-        self.assertEqual(package['initial-version'], '1.3.0')
+        self.assertEqual(package['initial-version'], '1.4.0')
         self.assertIs(package['include-component-in-tag'], False)
         self.assertIs(package['skip-changelog'], True)
         self.assertEqual(package['version-file'], '.github/version.txt')

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2026.11.04
+  Changes:
+    - Updated for Factorio 2.1 (requires base 2.1; Space Age, Quality, Recycler and Elevated Rails remain optional)
+    - Requires YIR - Yuoki Industries - Railways 1.4.0 or newer (its Factorio 2.1 release)
+    - Optional Yuoki Industries dependency now requires Yuoki 1.3.2 or newer (the Factorio 2.1 release)
+    - With Quality enabled, the uranium locomotives' max speed and the cargo wagons' inventory now scale with quality, like vanilla rolling stock
+---------------------------------------------------------------------------------------------------
 Version: 1.3.0
 Date: 2026.02.13
   Major Features:
