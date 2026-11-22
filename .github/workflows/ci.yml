@@ -25,6 +25,8 @@ jobs:
           for path in Path('tools').glob('*.py'):
               ast.parse(path.read_text(), filename=str(path))
           PY
+      - name: Test Pullfrog authorization
+        run: python3 tools/test_pullfrog_command.py
       - name: Test package and release contracts
         run: |
           python3 tools/test_package.py
