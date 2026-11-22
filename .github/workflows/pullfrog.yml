@@ -52,9 +52,11 @@ jobs:
           push: restricted
           shell: restricted
 
+  # If author verification exhausts its retries, jatmn can request a fresh review with @pullfrog.
   auto-review:
     if: >-
       github.event_name == 'workflow_dispatch' &&
+      github.repository == 'jatmn/YIR-Uranium-Power-Trains-2.0' &&
       !github.event.repository.private &&
       github.actor == 'pullfrog[bot]' &&
       github.actor_id == '226033991' &&
